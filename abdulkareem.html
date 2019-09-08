@@ -52,7 +52,20 @@ Progress: <progress max="100" value="100" ></progress>
 <p><b>Programming </b> - Front end development </p>
 </section>
 
-
+<section class="contactform">
+	<form action="success.php" method="POST" autocomplete="on" validate>
+		<fieldset>
+		<legend>Send a Message to Mustapha</legend>
+		 <input type="text" name="name" placeholder="Your Name" required pattern=".{4,}" title="Enter 4 or more characters" autofocus="on"> <br>
+		<input type="email" name="email" placeholder="Your Email" required > <br>
+		
+		<input type="text" name="title" placeholder="Message Title" required > <br>
+		
+		<textarea name="message" placeholder='Your Message' required pattern=".{20,}" title="Enter 20 or more characters" minlength="20" ></textarea> <br>
+		<input type="submit" name="Submit" value="Submit" >
+		</fieldset>
+		</form>
+		</section>
 
 </body>
 </html>
